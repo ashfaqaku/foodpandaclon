@@ -218,46 +218,10 @@ const PandaAdsHome: React.FC<PandaAdsHomeProps> = ({ onNavigateToSolutions }) =>
       <section className="bg-white py-24 px-6 md:px-[10%] overflow-hidden border-t border-gray-50">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16">
           <div className="w-full lg:w-1/2 relative h-[500px] md:h-[650px] flex items-center justify-center">
-            <div className="relative z-20 w-[240px] md:w-[280px] aspect-[9/19] rounded-[3rem] border-[10px] border-black overflow-hidden shadow-2xl bg-white transform -rotate-2">
-              <img src="https://images.unsplash.com/photo-1534940859016-d56088431872?auto=format&fit=crop&q=80&w=400" alt="Campaign UI" className="w-full h-full object-cover" />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-center">
-                <div className="text-white font-black italic text-xl uppercase leading-tight">PASKO like<br />a Panda</div>
-                <div className="mt-2 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/30 text-[10px] text-white font-black uppercase tracking-widest">code: FPASKO</div>
-              </div>
-            </div>
-            <div className="absolute top-[5%] right-0 md:right-[-5%] z-30 w-[280px] md:w-[350px] bg-white rounded-2xl shadow-2xl border border-gray-100 p-5 transform rotate-3 animate-float">
-              <div className="flex items-center justify-between mb-4">
-                <div className="text-[10px] font-black text-[#D70F64] uppercase tracking-widest">panda ads ROAS Report - SKUs</div>
-                <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-              </div>
-              <div className="grid grid-cols-2 gap-3 mb-4">
-                <div className="bg-gray-50 p-2 rounded-lg border border-gray-100">
-                  <div className="text-[8px] text-gray-400 font-bold uppercase">Total ROAS</div>
-                  <div className="text-sm font-black text-gray-900">12.5x</div>
-                </div>
-                <div className="bg-gray-50 p-2 rounded-lg border border-gray-100">
-                  <div className="text-[8px] text-gray-400 font-bold uppercase">Campaign Duration</div>
-                  <div className="text-sm font-black text-gray-900">30 Days</div>
-                </div>
-              </div>
-              <div className="h-16 flex items-end gap-1.5 pt-2">
-                {[40, 60, 45, 90, 100, 80, 55, 75, 95, 110, 85].map((h, i) => (
-                  <div key={i} className={`flex-1 rounded-t-sm transition-all duration-500 ${i === 4 || i === 9 ? 'bg-[#D70F64]' : 'bg-gray-200'}`} style={{ height: `${h}%` }}></div>
-                ))}
-              </div>
-            </div>
-            <div className="absolute bottom-[15%] left-0 md:left-[-10%] z-30 w-[240px] md:w-[280px] bg-white rounded-2xl shadow-2xl border-4 border-[#D70F64]/10 p-4 transform -rotate-6 transition-transform hover:scale-110 duration-500">
-              <div className="flex gap-4">
-                <div className="w-16 h-16 bg-[#fff0f6] rounded-xl flex items-center justify-center shrink-0 border border-[#D70F64]/20">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg" className="w-10 h-auto grayscale opacity-80" alt="Coke" />
-                </div>
-                <div className="space-y-1">
-                  <div className="text-[#D70F64] text-lg font-black leading-none">₱100 off</div>
-                  <div className="text-gray-900 text-xs font-black uppercase">Coke orders</div>
-                </div>
-              </div>
-            </div>
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[#f8f9fa] rounded-full -z-10 scale-90 opacity-60"></div>
+          
+          
+            
+         
           </div>
           <div className="w-full lg:w-2/5 space-y-8 text-left">
             <div className="space-y-4">
