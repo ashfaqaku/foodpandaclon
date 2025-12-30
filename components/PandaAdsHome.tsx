@@ -218,11 +218,12 @@ const PandaAdsHome: React.FC<PandaAdsHomeProps> = ({ onNavigateToSolutions }) =>
       <section className="bg-white py-24 px-6 md:px-[10%] overflow-hidden border-t border-gray-50">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-16">
           <div className="w-full lg:w-1/2 relative h-[500px] md:h-[650px] flex items-center justify-center">
-          
-          
-            
-         
-          </div>
+            <img
+              src="app/assets/images/strategic.png"
+              alt="In-app advertising solutions"
+              className="object-contain h-full w-full "
+            />
+             </div>
           <div className="w-full lg:w-2/5 space-y-8 text-left">
             <div className="space-y-4">
               <h3 className="text-3xl md:text-[40px] font-black text-gray-900 tracking-tight leading-tight">Strategic partnerships</h3>
@@ -235,54 +236,92 @@ const PandaAdsHome: React.FC<PandaAdsHomeProps> = ({ onNavigateToSolutions }) =>
 
       {/* Section 7: Go beyond basic targeting */}
       <section className="bg-white py-24 px-6 md:px-[10%]">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-          <div className="w-full lg:w-2/5 space-y-8 text-left">
-            <div className="space-y-6">
-              <h2 className="text-4xl md:text-[48px] font-black text-gray-900 leading-tight tracking-tight">
-                Go beyond basic targeting with panda ads
-              </h2>
-              <p className="text-gray-600 font-medium text-lg leading-relaxed">
-                Maximise your ROI and connect with a broader, more relevant audience through precise targeting powered by our first-party data.
-              </p>
-            </div>
-            <button onClick={onNavigateToSolutions} className="bg-[#ff2b85] text-white px-12 py-4 rounded-full font-black text-lg shadow-xl shadow-[#ff2b85]/20 hover:bg-[#d70f64] transition-all transform hover:scale-105 active:scale-95">
-              Explore solutions
-            </button>
-          </div>
-          <div className="w-full lg:w-3/5">
-            <div className="bg-white rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.08)] border border-gray-100 overflow-hidden">
-              <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse">
-                  <thead>
-                    <tr className="bg-[#ff2b85] text-white">
-                      <th className="py-5 px-6 font-black text-sm md:text-base whitespace-nowrap">Targeting based on</th>
-                      <th className="py-5 px-6 font-black text-sm md:text-base text-center whitespace-nowrap">Generic platforms</th>
-                      <th className="py-5 px-6 font-black text-sm md:text-base text-center whitespace-nowrap">panda ads</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-100">
-                    {targetingData.map((row, idx) => (
-                      <tr key={idx} className="hover:bg-gray-50 transition-colors">
-                        <td className="py-5 px-6 text-sm md:text-base font-bold text-gray-700">{row.label}</td>
-                        <td className="py-5 px-6 text-center">
-                          {row.generic ? (
-                            <i className="fas fa-check text-[#ff2b85] text-xl"></i>
-                          ) : (
-                            <i className="fas fa-times text-gray-800 text-xl font-black"></i>
-                          )}
-                        </td>
-                        <td className="py-5 px-6 text-center bg-[#ff2b85]/5">
-                          <i className="fas fa-check text-[#ff2b85] text-xl"></i>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
+  <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+    {/* Left side - اب lg:w-3/5 (پہلے lg:w-2/5 تھا) */}
+    <div className="w-full lg:w-3/5 space-y-8 text-left">
+      <div className="space-y-6">
+        <h2 className="text-4xl md:text-[25px] font-bold text-gray-900 leading-tight tracking-tight">
+          Go beyond basic targeting with panda ads
+        </h2>
+        <p className="text-black font-sm text-sm leading-relaxed">
+          Maximise your ROI and connect with a broader, more relevant audience<br/> through precise targeting powered by our first-party data.
+        </p>
+      </div>
+      <button onClick={onNavigateToSolutions} className="bg-[#ff2b85] text-white px-10 py-2 rounded-full font-bold text-lg shadow-xl shadow-[#ff2b85]/20 hover:bg-[#d70f64] transition-all transform hover:scale-105 active:scale-95">
+        Explore solutions
+      </button>
+    </div>
+    
+    {/* Right side - اب lg:w-2/5 (پہلے lg:w-3/5 تھا) */}
+    <div className="w-full lg:w-3/5">
+      <div className="bg-white ">
+        <div className="overflow-x-auto">
+        <img
+              src="app/assets/images/graph.png"
+              alt="In-app advertising solutions"
+              className="object-contain h-full w-full "
+            />
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  {/* <section className="bg-white py-24 px-6 md:px-[10%]">
+  <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+    {/* Left side - اب lg:w-3/5 (پہلے lg:w-2/5 تھا) */}
+    {/* <div className="w-full lg:w-3/5 space-y-8 text-left">
+      <div className="space-y-6">
+        <h2 className="text-4xl md:text-[48px] font-black text-gray-900 leading-tight tracking-tight">
+          Go beyond basic targeting with panda ads
+        </h2>
+        <p className="text-gray-600 font-medium text-lg leading-relaxed">
+          Maximise your ROI and connect with a broader, more relevant audience through precise targeting powered by our first-party data.
+        </p>
+      </div>
+      <button onClick={onNavigateToSolutions} className="bg-[#ff2b85] text-white px-12 py-4 rounded-full font-black text-lg shadow-xl shadow-[#ff2b85]/20 hover:bg-[#d70f64] transition-all transform hover:scale-105 active:scale-95">
+        Explore solutions
+      </button>
+    </div> */}
+
+    {/* Right side - اب lg:w-2/5 (پہلے lg:w-3/5 تھا) */}
+    {/* <div className="w-full lg:w-2/5"> */}
+      {/* <div className="bg-white rounded-2xl rounded-4xl shadow-xl border border-gray-100 p-6 md:p-8">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="bg-[#ff2b85] text-white">
+                <th className="py-3 px-4 font-black text-xs md:text-sm whitespace-nowrap text-left">Targeting based on</th>
+                <th className="py-3 px-4 font-black text-xs md:text-sm whitespace-nowrap text-center">Generic platforms</th>
+                <th className="py-3 px-4 font-black text-xs md:text-sm whitespace-nowrap text-center">panda ads</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {targetingData.map((row, idx) => (
+                <tr key={idx} className="hover:bg-gray-50 transition-colors">
+                  <td className="py-3 px-4 text-xs md:text-sm font-medium text-gray-700 whitespace-nowrap">{row.label}</td>
+                  <td className="py-3 px-4 text-center">
+                    {row.generic ? (
+                      <i className="fas fa-check text-[#ff2b85] text-base"></i>
+                    ) : (
+                      <i className="fas fa-times text-gray-800 text-base font-bold"></i>
+                    )}
+                  </td>
+                  <td className="py-3 px-4 text-center bg-[#ff2b85]/5">
+                    <i className="fas fa-check text-[#ff2b85] text-base"></i>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div> */}
+  {/* </div> */ }
+  {/* </section>   */}
 
       {/* Section 8: Proven impact with panda ads */}
       <section className="bg-gray-50/50 py-24 px-6 md:px-[10%]">
